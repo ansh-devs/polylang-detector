@@ -51,7 +51,7 @@ jobs:
         id: build
         with:
           context: .
-          file: ./polylang.Dockerfile
+          file: ./Dockerfile
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
